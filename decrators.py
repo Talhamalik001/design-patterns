@@ -12,7 +12,7 @@ class MilkDecorator:
     def cost(self):
         return self._coffee.cost() + 2
 
-
+# yhaa pe ham is ke basic strucre main add akr rahe hian
 # Decorator (Sugar)
 class SugarDecorator:
     def __init__(self, coffee):
@@ -30,4 +30,5 @@ milk_coffee = MilkDecorator(coffee)
 print(f"Coffee with Milk: ${milk_coffee.cost()}")
 
 milk_sugar_coffee = SugarDecorator(milk_coffee)
+
 print(f"Coffee with Milk and Sugar: ${milk_sugar_coffee.cost()}")
