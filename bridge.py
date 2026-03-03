@@ -1,3 +1,11 @@
+# Ye pattern related objects ki families create karne ke liye use hota hai
+# bina unke concrete classes ko specify kiye.
+# Iska faida: code flexible, reusable aur maintainable hota hai
+# aur objects ko easily swap ya extend kiya ja sakta hai.
+
+
+
+
 # Abstraction (Remote Control)
 class RemoteControl:
     def __init__(self, device):
@@ -45,4 +53,5 @@ remote.turn_on()  # Output: TV is now ON.
 
 fan = Fan()
 remote.device = fan
+
 remote.turn_on()  # Output: Fan is now ON.
